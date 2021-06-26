@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>WishItem</title>
+		<style type="text/css">
+			div{padding: 50px;line-height: 40px;font-size: 12px;}
+			fieldset{padding: 10px 0px 10px 100px;width: 50%;margin: 0px auto;border-color: lightseagreen;background-image: url(img/y.jpg);}
+			span{font-weight: bold;font-size: 18px;color: lightseagreen;}
+			.grey{color: darkgray;}
+		</style>
+	</head>
+	<body>
+		<marquee><img src="img/rolling.png" /></marquee>
+		<div>
+		    <fieldset>
+			    <legend align="left"><span>Aegean Furniture</span>&nbsp;<span class="grey">心仪产品</span></legend>
+			    <label for="name">请输入您的姓名以便联系:</label><input type="text" id="name" placeholder="请输入您的姓名"  /><br />
+			    <label for="item">请输入您心仪的产品名称:</label><input type="text" id="item" placeholder="请输入产品名称"  /><br />
+			    <label for="date">希望提货的日期:</label>
+			        <input type="text" id="date" size="5" />年
+			        <select>
+			            <option selected="selected">1月</option>
+			            <option>2月</option> 
+			            <option>3月</option>			            	            
+			        </select>月
+			        <select>
+			            <option selected="selected">1</option>
+			            <option>2</option> 
+			            <option>3</option>			            
+			        </select>日
+			    <br />
+			    <label for="email">请输入您的电子邮件地址:</label><input type="email" id="email" placeholder="请输入您的电子邮件地址"  /><br />
+			    <label>您是否查看过我们的在线产品目录?</label><input type="radio" name="tf" value="true" checked="checked" />是
+			            <input type="radio" name="tf" value="false" />否
+			    <br />        
+			    <label>您是否对其它类产品有兴趣?(选择感兴趣的产品类型)</label><br />
+			            <input type="checkbox" name="pro" value="tv" />大屏幕电视机
+			            <input type="checkbox" name="pro" value="audio" />音频设备
+			            <input type="checkbox" name="pro" value="video" />视频设备
+			            <input type="checkbox" name="pro" value="camera" />相机
+			    <br /> 
+			    <label for="suggest">在提交之前,您还有什么问题意见或建议?</label><br />
+		   	    <textarea cols="41" rows="4" id="suggest" placeholder="您的输入:"></textarea><br />
+		   	    <input type="submit" value="提交" />
+		   	    <input type="reset" value="重置" />
+		    </fieldset>
+		</div>
+	</body>
+</html>

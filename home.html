@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>home</title>
+		<style type="text/css">
+			*{margin: 0px;}
+		</style>
+	</head>
+	<body>
+		<img src="img/pic00.png" width="100%" id="pic"  />
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+		<script>
+		    var i=1;
+		    function changepic(){
+		    	if(i<3){
+		    		document.getElementById("pic").src="img/pic0"+i+".png";
+		    		i++
+		    	}
+		    	if(i==3){
+		    		i=0;
+		    	}
+		    }
+			$(function(){setInterval("changepic()",2500);});
+		</script>
+	</body>
+</html>

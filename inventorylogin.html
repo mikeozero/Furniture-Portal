@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>inventorylogin</title>
+		<style type="text/css">
+			*{margin: 0px;padding: 0px;font-size: 15px;color: black;}
+			div{width: 500px;margin: 100px auto;}
+			table{width: 400px;margin: 10px auto;padding-top: 50px;padding-left: 20px;}
+			td{width: 90px;height: 50px;}			
+			label{color: white;border-radius: 5px;box-shadow: 5px 5px 5px 1px darkgrey;}
+			fieldset{margin-bottom: 10px;height: 350px;background-image: url(img/y.jpg);}
+			legend{margin-left: 10px;background-color: grey;}
+			.fistcol{text-align: right; padding-right: 5px;color: goldenrod;font-weight: 600;}
+			.submit{text-align: center;}
+			.note{color: red;font-size: 11px;}
+			input::-webkit-input-placeholder{color: darkgray;}
+	        input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+	            color:darkgray;
+	        }
+	        input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+	            color:darkgray;
+	        }
+	        input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+	            color:darkgray;
+	        }
+		</style>
+	</head>
+	<body>
+		<marquee><img src="img/rolling.png" /></marquee>
+		<div>
+			<fieldset class="f1">
+				<legend align="left"><label>库存管理登录</label></legend>
+				<form action="#" method="get" id="form1"></form>
+				<table>
+					<tr>
+						<td class="fistcol">用户名:</td>
+						<td><input type="text" form="form1" placeholder="请输入用户名" style="width: 220px;height: 26px;"/></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="fistcol">密码:</td>
+						<td><input type="password" form="form1" placeholder="请输入密码" style="width: 220px;height: 26px;"/></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="3" class="submit"><input type="submit" value="登录" style="width: 65px;height: 30px;border-radius: 5px;color: white;background-color: dodgerblue;" form="form1" /></td>						
+					</tr>
+				</table>
+			</fieldset>
+		</div>	
+	</body>
+</html>

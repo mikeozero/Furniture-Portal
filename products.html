@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>products</title>
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css" />		
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<style>
+			table{margin: 50px auto;box-shadow: 5px 5px 5px 1px gray;}
+			.blue{color: dodgerblue;font-weight: 600;}
+			.red{color: salmon;font-weight: 600;}
+			.green{color: seagreen;font-weight: 600;}
+			.tabfont{font-size: 15px;font-weight: 600;color: #5BC0DE;}
+		</style>
+	</head>
+	<body>
+		<div class="tabs">
+      <ul class="nav nav-tabs">
+      	<li class="active"><a data-toggle="tab" href="#productInfo"><font class="tabfont">产品信息</font></a></li>
+        <li><a data-toggle="tab" href="#customerInfo"><font class="tabfont">客户信息</font></a></li>
+        <li><a data-toggle="tab" href="#onsaleItems"><font class="tabfont">促销商品</font></a></li>
+      </ul>
+      <div class="tab-content">
+      	<div id="productInfo" class="tab-pane active">
+      		<div class="table-responsive col-md-12">
+				<table class="table table-condensed table-hover table-striped table-bordered col-md-10">
+					<thead>
+						<h3><strong style="color: #5BC0DE;display: inline-block;box-shadow: 5px 5px 5px 1px gray;">产品信息表</strong></h3>
+						<tr>
+							<th class="btn-info">产品编号</th>
+							<th class="btn-info">产品描述</th>
+							<th class="btn-info">产品单价</th>
+							<th class="btn-info">产品状态</th>
+							<th class="btn-info">仓储地点</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<td>GY-1002C</td>
+							<td>Chloe Elizabeth Pearl Loveseat</td>
+							<td class="blue">&yen; 5,000</td>
+							<td><span class="label label-info arrowed-right arrowed-in">approved</span></td>
+							<td>vancuvor</td>
+						</tr>
+						<tr class="success">
+							<td>GY-SF-7992</td>
+							<td>Conrad Sofa: Silver Satin</td>
+							<td class="red">&yen; 5,000</td>
+							<td><span class="label label-danger arrowed arrowed-in-right">on sale</span></td>
+							<td>Toronto</td>
+						</tr>
+						<tr>
+							<td>GY-875</td>
+							<td>Estella Chair</td>
+							<td class="red">&yen; 2,500</td>
+							<td><span class="label label-danger arrowed arrowed-in-right">on sale</span></td>
+							<td>California</td>
+						</tr>
+						<tr>
+							<td>GY-BEN-7772SS</td>
+							<td>Kube Grey Velvet Ottoman S</td>
+							<td class="red">&yen; 400</td>
+							<td><span class="label label-success arrowed arrowed-in-right">pending</span></td>
+							<td>vancuvor</td>
+						</tr>
+						<tr class="warning">
+							<td>GY-DE-7948</td>
+							<td>Baccarat White Gold Desk</td>
+							<td class="blue">&yen; 2,250</td>
+							<td><span class="label label-info arrowed-right arrowed-in">approved</span></td>
+							<td>California</td>
+						</tr>
+						<tr class="danger">
+							<td><i class="fa fa-mixcloud"></i></td>
+							<td>Sun Burst Wall Mirror</td>
+							<td class="green">&yen; 900</td>
+							<td><span class="label label-warning arrowed">sold out</span></td>
+							<td>Toronto</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+      	</div>
+        <div id="customerInfo" class="tab-pane">
+      		<div class="table-responsive col-md-12">
+				<table class="table table-condensed table-hover table-striped table-bordered col-md-10">
+					<thead>
+						<h3><strong style="color: #5BC0DE;display: inline-block;box-shadow: 5px 5px 5px 1px gray;">客户信息表</strong></h3>
+						<tr>
+							<th class="btn-info">客户编号</th>
+							<th class="btn-info">客户姓名</th>
+							<th class="btn-info">客户电话</th>
+							<th class="btn-info">客户地址</th>
+							<th class="btn-info">备注信息</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<td>KH-1001C</td>
+							<td class="blue">Chloe</td>
+							<td>6479177526</td>
+							<td>12 Glencoyen Cres.</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>KH-1002</td>
+							<td class="green">Joyce</td>
+							<td>9055384785</td>
+							<td>1 Tech Blvd.</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>KH-1003</td>
+							<td class="red">Estella</td>
+							<td>9055132468</td>
+							<td>555 Barnwell Dr.</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>KH-1004</td>
+							<td class="blue">Gary</td>
+							<td>4167775588</td>
+							<td>79 Sheppard Ave.</td>
+							<td></td>
+						</tr>
+						<tr class="warning">
+							<td>KH-1005</td>
+							<td class="green">Bruce</td>
+							<td>9051234689</td>
+							<td>6 Finch St.</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>KH-1006</td>
+							<td class="red">Sandra</td>
+							<td>4165892468</td>
+							<td>99 Steeles Cir.</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+      	</div>
+      	<div id="onsaleItems" class="tab-pane">
+      		<div class="table-responsive col-md-12">
+				<table class="table table-condensed table-hover table-striped table-bordered col-md-10">
+					<thead>
+						<h3><strong style="color: #5BC0DE;display: inline-block;box-shadow: 5px 5px 5px 1px gray;">促销商品表</strong></h3>
+						<tr>
+							<th class="btn-info">产品编号</th>
+							<th class="btn-info">产品描述</th>
+							<th class="btn-info">产品原价</th>
+							<th class="btn-info">优惠价格</th>
+							<th class="btn-info">库存数量</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<td>CX-1001C</td>
+							<td>Cady Kitchen Rug</td>
+							<td class="blue">&yen; 500</td>
+							<td class="red">&yen; 300</td>
+							<td class="green">50</td>
+						</tr>
+						<tr>
+							<td>CX-1002</td>
+							<td>Suger Lamp Royal</td>
+							<td class="blue">&yen; 400</td>
+							<td class="red">&yen; 300</td>
+							<td class="green">60</td>
+						</tr>
+						<tr>
+							<td>CX-1003</td>
+							<td>Manchaster Coffee Table</td>
+							<td class="blue">&yen; 2,500</td>
+							<td class="red">&yen; 2,000</td>
+							<td class="green">30</td>
+						</tr>
+						<tr>
+							<td>CX-1004</td>
+							<td>Heaven Garden Oil Painting 38' x 38'</td>
+							<td class="blue">&yen; 700</td>
+							<td class="red">&yen; 400</td>
+							<td class="green">5</td>
+						</tr>
+						<tr class="success">
+							<td>CX-1005</td>
+							<td>Barcelona Queen Bed White</td>
+							<td class="blue">&yen; 3,250</td>
+							<td class="red">&yen; 2,250</td>
+							<td class="green">8</td>
+						</tr>
+						<tr>
+							<td>CX-1006</td>
+							<td>Burlington Sofa Grey Velvet</td>
+							<td class="blue">&yen; 5,500</td>
+							<td class="red">&yen; 4,600</td>
+							<td class="green">12</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+      	</div>
+	</body>
+</html>

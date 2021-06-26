@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Furniture</title>
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css" />		
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	    <style type="text/css">
+		    .headpart{width: 100%;height: 80px;}
+	    	.nbar{border-radius: 30px;width: 73%;height: 38px;margin: 50px auto;
+		    	  background-color: lightgray;box-shadow: 5px 5px 5px 1px gray;}
+		    .logo{margin-top: 30px;margin-left: 10px;}
+		    
+		    .foot{width:100%;height: 15px;text-align: center;color: gray;font-size: 11px;margin-top: 50px;}	
+		    .middlepart{width: 100%;height: auto;} 
+		    .sidebar{height: 500px;} 
+		    .table-responsive{box-shadow: 5px 5px 5px 1px grey;}  
+		    tr{text-align: center;}  
+		    a{text-decoration: none;color: gray;}
+		    tbody a:hover{color: gold;border-left: 5px solid darkgray;border-bottom: 1px solid darkgray;}
+		    input{margin-bottom: 5px;height: 30px;border-radius: 5px;}
+		    button{color: white;background-color: lightgray;font-weight: 700;font-size: 14px;}
+		    .barfont{color: white;font-weight: 700;font-size: 14px;}
+		    .afont{color: darkgrey;font-weight: 500;font-size: 10px;}
+		    .sblock1{position: fixed;top:260px;right: 10px;box-shadow: 5px 5px 5px 1px darkgrey;}
+		    .sblock2{position: fixed;top:330px;right: 10px;box-shadow: 5px 5px 5px 1px darkgrey;}
+		    .sblock3{position: fixed;top:400px;right: 10px;box-shadow: 5px 5px 5px 1px darkgrey;}
+		    .btn-lg{width: 60px;height: 60px;}
+		    .mblock1{display: none ;position: fixed;top: 240px;right: 80px;box-shadow: 5px 5px 5px 1px darkgrey;}
+		    .mblock2{position: fixed;top: 310px;right: 80px;box-shadow: 5px 5px 5px 1px darkgrey;}
+		    .mblock3{display: none;position: fixed;top: 380px;right: 80px;box-shadow: 5px 5px 5px 1px darkgrey;}
+	        .word{width:100px;height: 20px;text-align: center;color: darkgrey;font-size: 10px;background-color: white;}
+	    </style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<!--head-->
+			<div class="row headpart">
+				<div class="logo col-md-2">
+					<img src="img/Aegean.PNG"  />
+				</div>				
+				<div class="nbar col-md-8">
+					<ul class="list-inline" style="text-align: center;line-height: 38px;margin: 0px 5px;">
+						<li class="pull-left"><a href="home.html" target="rightframe" class="barfont"><i class="fa fa-home"></i> Home</a></li>
+						<li><a href="introduce.html" target="rightframe" class="barfont"><i class="fa fa-globe"></i> Introduce</a></li>
+						<!--下拉菜单-->
+						<li class="dropdown pull-right">
+							<button class="btn btn-default" data-toggle="dropdown" style="color: white;background-color: lightgray;font-weight: 700;font-size: 14px;">
+								<i class="fa fa-cogs"></i>
+								Settings
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+							<li><a href="#"><span class="afont"><i class="fa fa-refresh"></i>&nbsp; Page Setting</span></a></li>
+							<li><a href="#"><span class="afont"><i class="fa fa-anchor"></i>&nbsp; Language Setting</span></a></li>
+							</ul>
+						</li>
+						
+						<li class="pull-right">
+							<!--登录键-->
+							<button class="btn" data-toggle="modal" data-target="#logIn"><i class="fa fa-paper-plane"></i> <b>Login</b></button>
+							<div class="modal fade" id="logIn" data-backdrop="false" data-keyboard="false">
+								<div class="modal-dialog modal-sm">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button class="close" data-dismiss="modal" >&times;</button>
+											<h4 style="color: dodgerblue;"><strong>会员登录</strong></h4>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+										        <input type="text" placeholder="请输入用户名" name="username" class="col-md-12"/><br />
+										        <input type="password" placeholder="请输入密码" name="password" class="col-md-12"/><br />
+										        <input type="text" placeholder="请输入验证码" name="confirm" class="confirm col-md-8"/>
+										        <img src="img/验证码.jpg" width="75px" height="30px" />
+									        </div>
+										</div>
+										<div class="modal-footer">
+											<button class="btn btn-primary">登录</button>												
+											<button class="btn btn-danger" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+								</div>
+						    </div>
+						    <!--注册键-->
+						    <button class="btn" data-toggle="modal" data-target="#register"><i class="fa fa-power-off"></i> <b>Regist</b></button>
+							<div class="modal" id="register" data-backdrop="false" data-keyboard="false">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4 style="color: dodgerblue;"><strong class="text-capitalize">create a new user</strong></h4>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-2 "><label for="email"><strong>Email</strong></label></div>
+													<div class="col-md-10 "><input type="email" style="width: 440px;" placeholder="Email" id="email" /></div>
+													
+												</div>
+												<div class="row">
+					                                <div class="col-md-2 "><label for="psw"><strong>Password</strong></label></div>
+													<div class="col-md-10 "><input type="password" style="width: 440px;" placeholder="Password" id="psw" /></div>
+												</div>
+												<div class="row">
+					                                <div class="col-md-2 "><label for="un"><strong>Username</strong></label></div>
+													<div class="col-md-10 "><input type="text" style="width: 440px;" placeholder="Username" id="un" /></div>
+												</div>
+												<div class="row">
+					                                <div class="col-md-2 "><label for="bd"><strong>Birthday</strong></label></div>
+													<div class="col-md-10 "><input type="date" style="width: 440px;" placeholder="Birthday" id="bd" /></div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button class="btn btn-success">Save</button>
+											<button class="btn btn-warning">Reset</button>
+											<button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>						
+					</ul>
+				</div>
+			</div>
+			<!--middlepart-->
+			<div class="row middlepart">
+				<!--leftbar-->
+				<div class="sidebar col-md-2">
+					<div class="firstline">
+						<img src="img/y.jpg"  width="100%"/>
+					</div>
+					<div class="table-responsive">
+						<table class="table table-condensed table-hover table-striped table-bordered">
+							<thead>
+								
+								<tr>
+									<th style="text-align: center;color: white;background-color: lightgray;"><i class="fa fa-leaf"></i> 页面导航</th>									
+								</tr>
+							</thead>							
+							<tbody>
+								<tr>
+									<td><a href="items.html" target="rightframe" class="btn btn-block"><i class="fa fa-diamond"></i> 产品推荐</a></td>
+									
+								</tr>
+								<tr>
+									<td><a href="products.html" target="rightframe" class="btn btn-block"><i class="fa fa-bar-chart"></i> 产品列表</a></td>
+								
+								</tr>
+								<tr>
+									<td><a href="manufactures.html" target="rightframe" class="btn btn-block"><i class="fa fa-group"></i> 厂商信息</a></td>
+									
+								</tr>
+								<tr>
+									<td><a href="manuintro.html" target="rightframe" class="btn btn-block"><i class="fa fa-pagelines"></i> 厂商介绍</a></td>
+									
+								</tr>
+								<tr>
+									<td><a href="inventorylogin.html" target="rightframe" class="btn btn-block"><i class="fa fa-pie-chart"></i> 库存情况</a></td>
+									
+								</tr>
+								<tr>
+									<td><a href="wishitem.html" target="rightframe" class="btn btn-block"><i class="fa fa-heartbeat"></i> 心愿名单</a></td>
+									
+								</tr>
+							</tbody>
+						</table>							
+					</div>
+				</div>
+				<!--rightframe-->
+				<div class="right col-md-9">
+					<iframe width="100%" height="750px" frameborder="no" scrolling="no" src="home.html" name="rightframe"></iframe>
+				</div>
+			</div>
+			<!--屏幕右侧的div小块-->
+			<div class="sblock1"><button class="btn btn-lg"><i class="fa fa-facebook-square"></i></button></div>
+			<div class="sblock2"><button class="btn btn-lg"><i class="fa fa-twitter"></i></button></div>
+			<div class="sblock3"><button class="btn btn-lg"><i class="fa fa-wechat"></i></button></div>
+			
+			<div class="mblock1"><div><img src="img/fb二维码.PNG" width="100px" height="100px" /></div><div class="word">请扫码关注</div></div>
+			<div class="mblock2" hidden ><div><img src="img/tt二维码.PNG" width="100px" height="100px"/></div><div class="word">请扫码关注</div></div>
+			<div class="mblock3"><div><img src="img/wx二维码.PNG" width="100px" height="100px" /></div><div class="word">请扫码关注</div></div>
+			
+			<!--foot-->
+			<div class="row foot">
+				<p>copyright&copy; 2019 Aegean &nbsp;<i class="fa fa-facebook"></i> &nbsp;<i class="fa fa-twitter"></i> &nbsp;<i class="fa fa-wechat"></i> </p>
+			</div>			
+		</div>
+		<script>
+			  $(".sblock1").hover(function(){$(".mblock1").show();},function(){$(".mblock1").hide();});
+			  $(".sblock2").hover(function(){$(".mblock2").prop("hidden",false);},function(){$(".mblock2").prop("hidden",true);});
+			  $(".sblock3").hover(function(){$(".mblock3").show();},function(){$(".mblock3").hide();});
+		</script>
+	</body>
+</html>
