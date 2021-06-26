@@ -9,7 +9,7 @@ A web-site for funiture retail company
 **modal components:**  
 ![image](https://user-images.githubusercontent.com/53555169/123524576-520f3200-d699-11eb-9d8e-566dc8650d07.png)
 
-![image](https://user-images.githubusercontent.com/53555169/123524586-69e6b600-d699-11eb-81cf-57ba70dacd64.png)
+![image](https://user-images.githubusercontent.com/53555169/123524862-fe054d00-d69a-11eb-956b-92f77719ebfa.png)
 
 ![image](https://user-images.githubusercontent.com/53555169/123524608-884cb180-d699-11eb-89a3-d86a90d8a101.png)
 
