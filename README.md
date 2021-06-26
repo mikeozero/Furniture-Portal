@@ -14,7 +14,7 @@ A web-site for funiture retail company
 ![image](https://user-images.githubusercontent.com/53555169/123524608-884cb180-d699-11eb-89a3-d86a90d8a101.png)
 
 **marquee:**  
-![image](https://user-images.githubusercontent.com/53555169/123524661-d5308800-d699-11eb-9de7-ebd4018212d1.png)
+![image](https://user-images.githubusercontent.com/53555169/123524823-c4344680-d69a-11eb-932a-0c9865e4731e.png)
 
 ![image](https://user-images.githubusercontent.com/53555169/123524698-145ed900-d69a-11eb-83c4-fcb2e4587bc7.png)
 
