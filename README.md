@@ -1,2 +1,2 @@
 # Furniture-Portal
-a web-site for funiture retail company
+A web-site for funiture retail company
